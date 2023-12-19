@@ -14,6 +14,7 @@ class TicTacToeGame {
                 this.board[cellIndex] = this.currentPlayer;
                 this.renderBoard();
             if (this.checkWinner()) {
+                alert('Player ' + this.currentPlayer + ' wins!');
                 console.log(`Player ${this.currentPlayer} wins!`);
                 this.restart();
             } else if (!this.board.includes('')) {
